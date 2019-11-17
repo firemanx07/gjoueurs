@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Sql Lite</string>
+    <string name="Num">Numéro: </string>
+    <string name="nom">Nom: </string>
+    <string name="prenom">Prenom: </string>
+    <string name ="ajouter"> Ajouter</string>
+    <string name ="supprimer"> Supprimer</string>
+    <string name ="afficher"> Afficher</string>
+    <string name ="affichertout"> ToutAfficher</string>
+    <string name ="suivant"> Suivant</string>
+    <string name ="precedent"> Precedent</string>
+    <string name ="premier"> Premier</string>
+    <string name="gestion_des_joueurs">Gestion des joueurs</string>
+</resources>

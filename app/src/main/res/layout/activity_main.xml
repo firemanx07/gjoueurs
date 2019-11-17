@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/football"
+    android:stretchColumns="0"
+
+    tools:visibility="visible">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:drawable/toast_frame">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:background="#55CCCCCC">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="2"
+                android:gravity="center"
+                android:text="@string/gestion_des_joueurs" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#55CCCCCC">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/Num" />
+            <EditText
+                android:id="@+id/edtNum"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:hint="@string/ajouter"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#55CCCCCC">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/nom" />
+            <EditText
+                android:id="@+id/edtNom"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:hint="@string/ajouter"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#55CCCCCC">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:text="@string/prenom" />
+            <EditText
+                android:id="@+id/edtPrenom"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:cursorVisible="true"
+                android:hint="@string/ajouter"
+                android:importantForAutofill="no"
+                android:inputType="text" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/btnAjouter"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:drawableStart="@android:drawable/ic_menu_add"
+                android:text="@string/ajouter" />
+
+            <Button
+                android:id="@+id/btnSupprimer"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:drawableStart="@android:drawable/ic_menu_delete"
+                android:text="@string/supprimer" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/btnAffichertout"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:text="@string/affichertout" />
+
+            <Button
+                android:id="@+id/btnAfficher"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:text="@string/afficher" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/btnPrcedent"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:drawableStart="@android:drawable/ic_media_previous"
+                android:text="@string/precedent" />
+
+            <Button
+                android:id="@+id/btnSuivant"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="2"
+                android:drawableEnd="@android:drawable/ic_media_next"
+                android:text="@string/suivant" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:id="@+id/btnPremier"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_column="1"
+                android:layout_span="2"
+                android:text="@string/premier" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
